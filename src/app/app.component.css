@@ -1,0 +1,24 @@
+.parent{
+    margin-left:8%; 
+    margin-right:8%;
+    margin-top: 30px;
+}
+
+.textarea-css{
+    width: 100%;
+    height: 200px;
+    border: 2px solid #d4d3d3;
+}
+
+button.btn.edit::before {
+    font-family: fontAwesome;
+    content: "\f044\00a0";
+    float: left;
+}
+
+.button-css{
+    height: 45px;
+    width: 180px;
+    font-size: 20px;
+    background-color: #0880c5;
+}

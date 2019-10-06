@@ -1,0 +1,63 @@
+ul>li {
+    list-style: none;
+}
+.time{
+  color:gray;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.name{
+  font-size: 15px;
+  font-weight: bold;
+}
+.image-div {
+  width: 48px;
+  padding: 0px;
+}
+.image-css{
+  padding: 0px;
+  margin: 0px;
+  border-radius: 8px;
+}
+.disqus-container{
+  padding: 0px;
+  margin-bottom: 15px;
+}
+.button-css{
+  color:gray;
+  border: none;
+}
+.textarea-css{
+  width: 80%;
+  height: 200px;
+  border: 2px solid #d4d3d3;
+}
+.comment-button-css{
+  height: 25px;
+  width: 120px;
+  font-size: 15px;
+  background-color: #0880c5;
+  padding-left: 10px;
+  float: left;
+  color: #fff;
+}
+
+button.comment-button-css::before {
+  font-family: fontAwesome;
+  content: "\f044\00a0";
+  float: left;
+}
+.close-button-css{
+  height: 25px;
+  width: 120px;
+  font-size: 15px;
+  background-color: #0880c5;
+  padding-left: 10px;
+  float: left;
+  color: #fff;
+}
+button.close-button-css::before {
+  font-family: fontAwesome;
+  content: "\f00d";
+  float: left;
+}

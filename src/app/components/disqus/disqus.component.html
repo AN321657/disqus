@@ -1,0 +1,33 @@
+<div class="container-fluid disqus-container" *ngFor="let comment of comments1">
+  <ul>
+    <li>
+      <div class="image-div col-lg-2">
+        <img class="image-css" [src]="comment.imageUrl" height="48" width="48">
+      </div>
+      <div class="col-lg-10">
+        <div>
+          <span class="name">{{comment.name}}</span>
+          <span class="time">{{comment.time | timeago:live}}</span>
+        </div>
+        <div>
+          <p>{{comment.comment}}</p>
+        </div>
+        <div>
+          <button class="button-css" *ngIf="!comment.reply.displayCommentBox" (click)="getCommentBox(comment.reply)">Reply</button>
+        </div>
+        <div *ngIf="comment.reply.displayCommentBox">
+          <div class="col-lg-12">
+            <textarea class="textarea-css" [(ngModel)]="comment.reply.comment"></textarea>
+          </div>
+          <div class="col-lg-12">
+            <button class="comment-button-css" (click)="reply(comment)">Comment</button>
+            <button class="close-button-css" (click)="close(comment)">Close</button>
+          </div>
+        </div>
+        <div>
+          <app-disqus [disqus]="comment.reply" *ngIf="comment.reply"></app-disqus>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
